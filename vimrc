@@ -1,14 +1,49 @@
-syntax enable
+set nocompatible
+
 set background=light
 colorscheme solarized
+
+syntax enable
+filetype on
+filetype plugin on
+
+set mouse=a
+set bs=2
+set ls=2 
+
+set ignorecase
+set smartcase
+
+set wildmenu
+set wildmode=list:longest,full
+
 set number
 set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+set hlsearch
+set incsearch
+
+inoremap jj <Esc>
+
+" This shows what you are typing as a command. 
+set showcmd
+
 set clipboard=unnamed
+
+" Eh, just annoying as hell to me.
 set nobackup
 set noswapfile
+
+set history=1000         " remember more commands and search history
+set undolevels=1000      " use many muchos levels of undo
+set wildignore=*.swp,*.bak,*.pyc,*.class
+
+set title                " change the terminal's title
+set visualbell           " don't beep
+set noerrorbells         " don't beep
 " Rename tabs to show tab number.
 " (Based on http://stackoverflow.com/questions/5927952/whats-implementation-of-vims-default-tabline-function)
 if exists("+showtabline")
