@@ -7,6 +7,8 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set clipboard=unnamed
+set nobackup
+set noswapfile
 " Rename tabs to show tab number.
 " (Based on http://stackoverflow.com/questions/5927952/whats-implementation-of-vims-default-tabline-function)
 if exists("+showtabline")
