@@ -1,6 +1,6 @@
 set nocompatible
 
-set background=light
+set background=dark
 colorscheme solarized
 
 syntax enable
